@@ -88,7 +88,6 @@ assign(Collection.prototype, AmpersandEvents, {
                 if (remove) modelMap[existing.cid || existing[this.mainIndex]] = true;
                 if (merge) {
                     attrs = attrs === model ? model.attributes : attrs;
-                    if (options.parse) attrs = existing.parse(attrs, options);
                     // if this is model
                     if (existing.set) {
                         existing.set(attrs, options);
